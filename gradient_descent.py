@@ -1,4 +1,7 @@
 """
+Author: Alireza Hajibagheri
+Email: nima.hajibagheri@gmail.com
+
 Gradient descent for solving the following hypothesis:
 
 h_theta(x) = theta_0 + theta_1 * x
