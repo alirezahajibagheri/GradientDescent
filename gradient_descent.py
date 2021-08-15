@@ -26,8 +26,8 @@ class GradientDescent:
     def gradient_descent(self, data_df):
         """
             :param data_df: input data in form of a pandas dataframe with two columns x and y
-            :return teta_0: final estimated teta_0 value
-            :return teta_1: final estimated teta_1 value
+            :return theta_0: final estimated theta_0 value
+            :return theta_1: final estimated theta_1 value
         """
         theta_0 = 0
         theta_1 = 0
@@ -71,15 +71,15 @@ class GradientDescent:
     def hypothesis_function(theta_0, theta_1, x):
         """ Returns h_theta(x_i) using the following equation:
             h_theta(x_i) = theta_0 + theta_1 * x_i
-            :param theta_0: current teta_0 value
-            :param theta_1: current teta_1 value
-            :param x: theta_0 + theta_1 * x
-            :return:
+            :param theta_0: current theta_0 value
+            :param theta_1: current theta_1 value
+            :param x: x values
+            :return: theta_0 + theta_1 * x
         """
         return theta_0 + (theta_1 * x)
 
 
-# Testing the code (code should print out teta_0 = 0 and teta_1 = 1 for this sample dataset)
+# Testing the code (code should print out theta_0 = 0 and theta_1 = 1 for this sample dataset)
 # Sample data
 column_names = ['x', 'y']
 data_tuples = [(0.0, 0.0),
